@@ -1,0 +1,14 @@
+---
+- name: add node1 to web1 group
+  add_host:
+    name: node1
+    groups: web1
+
+- name: add node2 to web2 group
+  add_host:
+    name: node2
+    groups: web2
+
+- name: get groups info from nodes
+  debug:
+    msg: "{{ group_names }}"

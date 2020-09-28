@@ -1,0 +1,10 @@
+---
+- name: first task to print list of network interfaces
+  hosts: all
+
+  tasks:
+  - name: print network interfaces
+    debug:
+      msg: Present network interfaces are {{ ansible_interfaces }}
+
+  
