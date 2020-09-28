@@ -1,0 +1,14 @@
+<body>  
+    
+    <ul>
+        {% for item in ['nice', 'big', 'cool'] %}
+
+        {% if 'web1' in group_names %}
+        <li>{{ item }} tomato</li>
+        {% else %}
+        <li>{{ item }} potato</li>
+        {% endif %}
+
+        {% endfor %}
+    </ul>
+</body>

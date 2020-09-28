@@ -1,0 +1,20 @@
+---
+
+- name: Generate whoami1
+  template:
+      src: templates/whoami.html
+      dest: "{{ static_web_server_default_path }}/whoami.html"
+      mode: 0644
+
+- name: Generate whoami2
+  template:
+      src: templates/whoami2.html
+      dest: "{{ static_web_server_default_path }}/whoami2.html"
+      mode: 0644
+  register: whoami2
+
+- name: Restart when changed
+  debug: 
+    msg: "Restart httpd"
+  when: whoami2.changed
+  notify: restart httpd
