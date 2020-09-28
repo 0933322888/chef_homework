@@ -1,0 +1,8 @@
+---
+
+- name: Get report
+  hosts: managed_nodes
+  become: yes
+
+  roles:
+    - uptime
