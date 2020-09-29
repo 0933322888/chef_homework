@@ -1,5 +1,2 @@
-*bash*
-.ansible
-.ssh
-.vscode*
-ansible/*
+*
+!chef
