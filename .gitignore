@@ -2,4 +2,4 @@
 .ansible
 .ssh
 .vscode*
-ansible
+ansible/*
