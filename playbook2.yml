@@ -1,7 +1,0 @@
----
-- name: Install HTTPD
-  hosts: managed_nodes
-  become: yes
-
-  roles:
-    - httpd

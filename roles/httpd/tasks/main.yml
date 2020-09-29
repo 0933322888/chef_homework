@@ -1,3 +1,0 @@
-- include_tasks: install_httpd.yml
-- include_tasks: add_to_groups.yml
-- include_tasks: whoami.yml
